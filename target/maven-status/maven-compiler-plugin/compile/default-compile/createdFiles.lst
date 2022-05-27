@@ -1,0 +1,6 @@
+SamokatAPI/order/Order.class
+SamokatAPI/RestAssuredSamokat.class
+SamokatAPI/courier/CourierCredentials.class
+SamokatAPI/order/OrderClient.class
+SamokatAPI/courier/Courier.class
+SamokatAPI/courier/CourierClient.class
