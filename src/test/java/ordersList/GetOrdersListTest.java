@@ -35,10 +35,14 @@ public class GetOrdersListTest {
     @DisplayName("Проверка успешного получения списка заказов")
     public void getOrdersListSuccess() {
         String message = "При получении списка заказов получен пустой список";
-        Order order = Order.getRandom();
+        Order order = Order.getRandomWithChooseColor(List.of("BLACK"));
+        System.out.println(order);
         orderCLient.getNumberMetro(order);
+        System.out.println(order);
         orderTrack1 = orderCLient.createOrder(order);
+        System.out.println(orderTrack1);
         orderTrack2 = orderCLient.createOrder(order);
+        System.out.println(orderTrack2);
         List<String> orderList = orderCLient.getOrdersList();
         assertTrue(message, orderList.size() > 1);
     }
